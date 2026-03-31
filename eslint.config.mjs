@@ -22,8 +22,11 @@ const eslintConfig = [
       "react/no-unescaped-entities": "off",
       "@next/next/no-img-element": "off",
       "jsx-a11y/alt-text": "off",
+      'import/no-anonymous-default-export': 'off',
+      'react/display-name': 'off',
     },
   },
+  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
 ];
 
 export default eslintConfig;
