@@ -1,36 +1,36 @@
-# Next.js App Router + React Server Components
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Try the demo live here: [**next-rsc-hn.wasmer.app**](https://next-rsc-hn.wasmer.app).
+## Getting Started
 
-> Note: This app is a clone of [Next.js Server Components demo](https://github.com/vercel/next-react-server-components/), [minimally adapted](https://github.com/wasmer-examples/next-server-components-wasmer-starter/commit/0b2afd3a6e633caf7e43a89f4a89cd349365b482) to run in [WinterJS](https://github.com/wasmerio/winterjs).
-
-## Introduction
-
-This is a demo app of the Hacker News website clone, which shows Next.js App Router with support for [React Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components).
-
-### Running Locally
-
-1. `npm install`
-2. `npm dev`
-
-You can run the React Server Components project using Wasmer (check out the [install guide](https://docs.wasmer.io/install)):
+First, run the development server:
 
 ```bash
-npm run edge:build
-npm run edge:preview
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Deploy on Wasmer Edge
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-The easiest way to deploy this Next.js Server Side components app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
+## Learn More
 
-Live example: https://next-rsc-hn.wasmer.app/
+To learn more about Next.js, take a look at the following resources:
 
-First, you'll need to run `npm run edge:build`, and then, to deploy to Wasmer Edge:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```bash
-wasmer deploy
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
