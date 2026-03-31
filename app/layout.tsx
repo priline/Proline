@@ -1,34 +1,21 @@
-import './globals.css'
-import Header from 'components/header'
-import SystemInfo from 'components/server-info'
-import Footer from 'components/footer'
+import type { Metadata } from next;
+import .globals.css;
+import ClientBody from .ClientBody;
 
-export const metadata = {
-  title: 'Next.js App Router + React Server Components Demo',
-  description: 'Hacker News clone built with the Next.js App Router.',
-  robots: {
-    index: true,
-    follow: true
-  }
-}
+export const metadata Metadata = {
+  title Plumbing, Electrical & Handyman Services in Kuala Lumpur  TAN Resources,
+  description TAN Resources offers professional plumbing, electrical, and handyman services in Kuala Lumpur. From leak repairs to installations, our certified experts ensure fast, reliable results.,
+  keywords plumbing, electrical, handyman, Kuala Lumpur, home repair, plumber near me, electrician,
+};
 
-export const viewport = {
-  themeColor: '#ffa52a'
-}
-
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+} Readonly{
+  children React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body>
-        <main>
-          <Header />
-          <div className="page">
-            {children}
-            <Footer />
-            <SystemInfo />
-          </div>
-        </main>
-      </body>
-    </html>
-  )
+    html lang=en
+      ClientBody{children}ClientBody
+    html
+  );
 }
